@@ -25,6 +25,9 @@ SECRET_KEY = 'django-insecure-$b003e&)vbfvgs&j&b_d^4xiq$c9)%fu)@xx8#0fj56oirjzk@
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+CSRF_TRUSTED_ORIGINS = [
+    'https://scientificcalc-production.up.railway.app'
+]
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1,[::1],scientificcalc-production.up.railway.app,*").split(",")
 
